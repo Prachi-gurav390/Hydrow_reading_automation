@@ -55,10 +55,20 @@ function App() {
       )}
       {loading && <p>Loading...</p>}
       {response && (
-        <div>
+       <div>
           <h3>Server Response:</h3>
           <p>{response.message}</p>
-          <p>Random Number: {response.random_number}</p>
+          <p>
+            You can view the response at{' '}
+            <a
+              href="https://docs.google.com/spreadsheets/d/1-fekTMS7OvZYUfeAdFJH2BpDWNsnZu0WsAd20ru6QZo/edit?gid=0#gid=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'blue', textDecoration: 'underline' }}
+            >
+              this Google Sheet
+            </a>
+          </p>
         </div>
       )}
     </div>
