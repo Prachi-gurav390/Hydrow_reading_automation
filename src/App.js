@@ -31,7 +31,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://3.109.73.189/upload', formData);
+      const res = await axios.post('https://upload.bruh.work.gd/upload', formData);
       setResponse(res.data);
     } catch (error) {
       console.error(error);
